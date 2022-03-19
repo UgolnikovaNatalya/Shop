@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Style for title -->
+    <style name="AppTitleTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/hint_size</item>
+        <item name="android:textColor">#846340</item>
+        <item name="android:fontFamily">@font/sf_ui_display_bold</item>
+    </style>
+
+    <!--    Style for info text -->
+    <style name="AppRegisterViewTextMain" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#846340</item>
+        <item name="android:fontFamily">@font/sf_ui_display_regular</item>
+    </style>
+
+    <!--    Style for typed text-->
+    <style name="AppRegisterViewTextHint" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#AF9479</item>
+        <item name="android:fontFamily">@font/sf_ui_display_regular</item>
+    </style>
+
+</resources>

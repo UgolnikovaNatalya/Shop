@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shop</string>
+    <string name="registry">Регистрация</string>
+    <string name="email">e-mail</string>
+    <string name="enter">Вход</string>
+    <string name="pass">Введите пароль</string>
+    <string name="reenter_passw">Повторите пароль</string>
+</resources>

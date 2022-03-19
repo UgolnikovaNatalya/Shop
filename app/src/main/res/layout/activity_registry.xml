@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/root"
+    android:background="@color/main_background_color">
+
+    <TextView
+        android:id="@+id/e_mail_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/email"
+        style="@style/AppRegisterViewTextMain"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/email_typed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingStart="18dp"
+        style="@style/AppRegisterViewTextHint"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_mail_txt"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/custom_borders"
+        tools:ignore="RtlSymmetry" />
+<!-- //////////////////////////////////////////////-->
+   <TextView
+       android:id="@+id/pass"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/pass"
+       style="@style/AppRegisterViewTextMain"
+
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/email_typed"
+       android:layout_marginTop="18dp"
+       android:layout_marginRight="18dp"
+       android:layout_marginLeft="18dp"/>
+
+    <EditText
+        android:id="@+id/pass_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        style="@style/AppRegisterViewTextHint"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/custom_borders"
+        tools:ignore="RtlSymmetry" />
+    <!-- //////////////////////////////////////////////-->
+    <TextView
+        android:id="@+id/reent_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        style="@style/AppRegisterViewTextMain"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass_enter"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"/>
+
+    <EditText
+        android:id="@+id/reent_pass_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        style="@style/AppRegisterViewTextHint"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reent_pass"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/custom_borders"
+        tools:ignore="RtlSymmetry" />
+    <!-- //////////////////////////////////////////////-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registry"
+
+        app:layout_constraintTop_toBottomOf="@id/reent_pass_edit"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
