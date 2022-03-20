@@ -4,106 +4,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegistryActivity_main"
     android:id="@+id/root"
     android:background="@color/main_background_color">
 
     <TextView
-        android:id="@+id/e_mail_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:text="@string/email"
-        style="@style/AppRegisterViewTextMain"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="50dp"/>
-
-    <EditText
-        android:id="@+id/email_typed"
+        android:id="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/registry"
+        style="@style/AppTitleTextStyle"
+        android:textAlignment="center"
+        android:background="@color/actionbar_background"
+        android:padding="9.88dp"
+        tools:ignore="MissingConstraints" />
 
-        android:paddingStart="18dp"
-        style="@style/AppRegisterViewTextHint"
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        app:dividerColor="@color/divider_color"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        tools:ignore="MissingConstraints" />
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/e_mail_txt"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginLeft="18dp"
-        android:background="@drawable/custom_borders"
-        tools:ignore="RtlSymmetry" />
-<!-- //////////////////////////////////////////////-->
-   <TextView
-       android:id="@+id/pass"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/pass"
-       style="@style/AppRegisterViewTextMain"
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        app:dividerColor="@color/divider_color"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@id/div1"
+        android:layout_marginTop="0.5dp"/>
 
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/email_typed"
-       android:layout_marginTop="18dp"
-       android:layout_marginRight="18dp"
-       android:layout_marginLeft="18dp"/>
 
-    <EditText
-        android:id="@+id/pass_enter"
+    <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="18dp"
-        style="@style/AppRegisterViewTextHint"
+        android:layout_marginTop="190.43dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/div2"
+        tools:ignore="MissingConstraints">
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pass"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginLeft="18dp"
-        android:background="@drawable/custom_borders"
-        tools:ignore="RtlSymmetry" />
-    <!-- //////////////////////////////////////////////-->
-    <TextView
-        android:id="@+id/reent_pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pass"
-        style="@style/AppRegisterViewTextMain"
+        <TextView
+            android:id="@+id/e_mail_txt"
+            style="@style/AppRegisterViewTextMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="@string/email"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pass_enter"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginLeft="18dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/reent_pass_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="18dp"
-        style="@style/AppRegisterViewTextHint"
+        <EditText
+            android:id="@+id/email_typed"
+            style="@style/AppRegisterViewTextHint"
+            android:layout_width="match_parent"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reent_pass"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginLeft="18dp"
-        android:background="@drawable/custom_borders"
-        tools:ignore="RtlSymmetry" />
-    <!-- //////////////////////////////////////////////-->
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registry"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
 
-        app:layout_constraintTop_toBottomOf="@id/reent_pass_edit"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginLeft="18dp"/>
+            android:layout_marginTop="7.51dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/custom_borders"
+            android:paddingStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/e_mail_txt"
+            tools:ignore="RtlSymmetry" />
+        <!-- //////////////////////////////////////////////-->
+        <TextView
+            android:id="@+id/pass"
+            style="@style/AppRegisterViewTextMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="24.49dp"
+            android:layout_marginRight="18dp"
+            android:text="@string/pass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_typed" />
+
+        <EditText
+            android:id="@+id/pass_enter"
+            style="@style/AppRegisterViewTextHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="7.51dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/custom_borders"
+            android:paddingStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pass"
+            tools:ignore="RtlSymmetry" />
+        <!-- //////////////////////////////////////////////-->
+        <TextView
+            android:id="@+id/reent_pass"
+            style="@style/AppRegisterViewTextMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="24.49dp"
+            android:layout_marginRight="18dp"
+            android:text="@string/pass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pass_enter" />
+
+        <EditText
+            android:id="@+id/reent_pass_edit"
+            style="@style/AppRegisterViewTextHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="7.51dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/custom_borders"
+            android:paddingStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reent_pass"
+            tools:ignore="RtlSymmetry" />
+        <!-- //////////////////////////////////////////////-->
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+
+
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/btn_color"
+            android:text="@string/registry"
+            app:layout_constraintTop_toBottomOf="@id/reent_pass_edit" />
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

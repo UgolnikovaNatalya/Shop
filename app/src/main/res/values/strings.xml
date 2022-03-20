@@ -1,8 +1,13 @@
 <resources>
+<!--    Toolbars-->
     <string name="app_name">Shop</string>
     <string name="registry">Регистрация</string>
-    <string name="email">e-mail</string>
     <string name="enter">Вход</string>
+    <string name="near_cafe">Ближайшие кофейни</string>
+
+<!--    Fields-->
+    <string name="email">e-mail</string>
     <string name="pass">Введите пароль</string>
-    <string name="reenter_passw">Повторите пароль</string>
+    <string name="reenter_pass">Повторите пароль</string>
+    <string name="on_map">На карте</string>
 </resources>

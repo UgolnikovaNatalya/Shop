@@ -9,8 +9,12 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="actionbar_background">#FAF9F9</color>
-    <color name="hint_text_color">#AF9479</color>
+    <color name="small_text_color">#AF9479</color>
     <color name="main_background_color">#E5E5E5</color>
     <color name="title_color">#846340</color>
+    <color name="btn_color">#342D1A</color>
+    <color name="btn_text">#F6E5D1</color>
+    <color name="cell">#F6E5D1</color>
+    <color name="divider_color">#C2C2C2</color>
 
 </resources>
