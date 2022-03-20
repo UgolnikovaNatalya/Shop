@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:background="@color/main_background_color"
+    tools:context=".EnterActivity">
+
+    <TextView
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        style="@style/AppTitleTextStyle"
+        android:textAlignment="center"
+        android:background="@color/actionbar_background"
+        android:padding="9.88dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        app:dividerColor="@color/divider_color"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        app:dividerColor="@color/divider_color"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@id/div1"
+        android:layout_marginTop="0.5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190.49dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/div2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/e_mail_txt_enter"
+            style="@style/AppRegisterViewTextMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="@string/email"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/email_typed_enter"
+            style="@style/AppRegisterViewTextHint"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="7.51dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/custom_borders"
+            android:paddingStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/e_mail_txt"
+            tools:ignore="RtlSymmetry" />
+        <!-- //////////////////////////////////////////////-->
+        <TextView
+            android:id="@+id/pass_enter"
+            style="@style/AppRegisterViewTextMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="24.49dp"
+            android:layout_marginRight="18dp"
+            android:text="@string/pass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_typed" />
+
+        <EditText
+            android:id="@+id/pass_edit_enter"
+            style="@style/AppRegisterViewTextHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginTop="7.51dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/custom_borders"
+            android:paddingStart="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pass"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            style="@style/Btn"
+
+
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/btn_color"
+            android:text="@string/enter"
+            app:layout_constraintTop_toBottomOf="@id/pass_edit_enter"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

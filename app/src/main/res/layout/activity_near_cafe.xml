@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:background="@color/main_background_color"
+    tools:context= ".NearCafe">
+
+    <TextView
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/near_cafe"
+        style="@style/AppTitleTextStyle"
+        android:textAlignment="center"
+        android:background="@color/actionbar_background"
+        android:padding="9.88dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/main_background_color"
+        android:background="@color/main_background_color"
+
+        app:layout_constraintBottom_toBottomOf="@id/tool_bar"
+        app:layout_constraintStart_toStartOf="@id/tool_bar"
+        app:layout_constraintTop_toTopOf="@id/tool_bar"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        app:dividerColor="@color/divider_color"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        app:dividerColor="@color/divider_color"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@id/div1"
+        android:layout_marginTop="0.5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/div2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="14.35dp"
+        android:paddingBottom="6dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btn_maps"
+        style="@style/Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+
+
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/btn_color"
+        android:text="@string/on_map"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32.49dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
