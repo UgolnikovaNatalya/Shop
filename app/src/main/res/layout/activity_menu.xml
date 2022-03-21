@@ -13,7 +13,7 @@
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/near_cafe"
+        android:text="@string/menu"
         style="@style/AppTitleTextStyle"
         android:textAlignment="center"
         android:background="@color/actionbar_background"
@@ -67,9 +67,7 @@
         android:paddingBottom="6dp"
         android:paddingStart="10dp"
         android:paddingEnd="16dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        />
-
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
     <Button
         android:id="@+id/btn_maps"
         style="@style/Btn"
@@ -81,11 +79,9 @@
 
         android:layout_marginRight="18dp"
         android:backgroundTint="@color/btn_color"
-        android:text="@string/on_map"
+        android:text="@string/go_to_pay"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="32.49dp"/>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
