@@ -4,10 +4,13 @@
     <string name="registry">Регистрация</string>
     <string name="enter">Вход</string>
     <string name="near_cafe">Ближайшие кофейни</string>
+    <string name="map">Карта</string>
 
 <!--    Fields-->
     <string name="email">e-mail</string>
     <string name="pass">Введите пароль</string>
     <string name="reenter_pass">Повторите пароль</string>
     <string name="on_map">На карте</string>
+    <string name="menu">Меню</string>
+    <string name="go_to_pay">Перейти к оплате</string>
 </resources>
