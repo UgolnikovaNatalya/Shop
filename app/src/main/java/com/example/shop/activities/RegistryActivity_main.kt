@@ -1,10 +1,10 @@
-package com.example.shop
+package com.example.shop.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.shop.R
 import com.example.shop.databinding.ActivityRegistryBinding
 
 class RegistryActivity_main : AppCompatActivity() {
@@ -12,6 +12,7 @@ class RegistryActivity_main : AppCompatActivity() {
         ActivityRegistryBinding::bind,
         R.id.root
     )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

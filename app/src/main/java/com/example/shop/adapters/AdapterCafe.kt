@@ -1,4 +1,4 @@
-package com.example.shop.data
+package com.example.shop.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,13 +6,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.shop.R
+import com.example.shop.data.DataCafe
 
-class MyAdapter : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+class AdapterCafe : RecyclerView.Adapter<AdapterCafe.ViewHolder>() {
 
-    var myList : List<MyData> = emptyList()
+    var listCafe : List<DataCafe> = emptyList()
 
-    fun fillList (persons : List<MyData>) {
-        this.myList = persons
+    fun fillList (cafe : List<DataCafe>) {
+        this.listCafe = cafe
         notifyDataSetChanged()
     }
 
@@ -23,18 +24,17 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.setData(myList[position])
+        holder.setData(listCafe[position])
     }
 
-    override fun getItemCount(): Int = myList.size
+    override fun getItemCount(): Int = listCafe.size
 
     class ViewHolder (item : View) : RecyclerView.ViewHolder(item) {
 
-        fun setData (person: MyData) {
-            itemView.findViewById<TextView>(R.id.cafe_name).text = person.nameCafe
-            itemView.findViewById<TextView>(R.id.distance_to_cafe).text = person.distance.toString()
+        fun setData (id: DataCafe) {
+            itemView.findViewById<TextView>(R.id.cafe_name).text = id.nameCafe
+            itemView.findViewById<TextView>(R.id.distance_to_cafe).text = id.distance.toString()
         }
 
     }
-
 }

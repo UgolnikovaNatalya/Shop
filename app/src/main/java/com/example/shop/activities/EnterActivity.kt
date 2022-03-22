@@ -1,10 +1,10 @@
-package com.example.shop
+package com.example.shop.activities
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.shop.R
 import com.example.shop.databinding.ActivityEnterBinding
 
 class EnterActivity : AppCompatActivity() {
